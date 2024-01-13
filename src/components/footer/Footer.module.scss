@@ -1,0 +1,27 @@
+﻿@import '../../variables.scss';
+
+.footer__wrapper {
+  position: absolute;
+  bottom: 0;
+  background-color: $blue-secondary;
+  width: 100%;
+  padding: 17px 20px;
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+}
+
+.footer__leftbar {
+  font-size: 18px;
+  color: $white;
+  margin-right: 36px;
+}
+
+.footer__rightbar {
+  font-size: 18px;
+  color: $white;
+  position: absolute;
+  right: 20px;
+  margin-right: 0;
+}

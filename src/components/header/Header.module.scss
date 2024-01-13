@@ -1,0 +1,24 @@
+﻿@import '../../variables.scss';
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  align-items: center;
+  background-color: $blue-secondary;
+
+  @media screen and (max-width: 800px) {
+    background-color: inherit;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+}
+
+.header__logo {
+  color: $white;
+  font-size: 28px;
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+}

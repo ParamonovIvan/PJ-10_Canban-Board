@@ -1,0 +1,88 @@
+﻿@import '../../variables.scss';
+
+.tasklist {
+  background-color: $list-bg;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 18px;
+  height: fit-content;
+  color: $black;
+  width: $tasklist-width;
+  max-height: calc(100vh - 170px);
+  overflow-y: auto;
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  &__name {
+    text-transform: capitalize;
+  }
+
+  &__list {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  &__button {
+    font-size: 18px;
+    color: $add-card-text;
+    border-radius: 5px;
+    padding: 5px;
+    width: 102px;
+
+    &:disabled,
+    &:disabled:hover {
+      opacity: 0.7;
+      cursor: auto;
+      background: none;
+    }
+
+    &__svg {
+      margin-right: 3px;
+    }
+
+    &:hover {
+      background-color: $white;
+    }
+
+    &__submit {
+      background-color: $blue-primary;
+      color: $white;
+
+      &:hover {
+        background-color: $blue-secondary;
+        color: $white;
+      }
+
+      &:disabled,
+      &:disabled:hover {
+        background-color: $blue-primary;
+      }
+    }
+  }
+}
+
+.task {
+  background-color: $white;
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  position: relative;
+  overflow-wrap: break-word;
+  cursor: pointer;
+}
+
+.input {
+  color: $black;
+  background: none;
+  border: none;
+  font-size: 18px;
+  border-bottom: 1px solid $black;
+  width: 100%;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
