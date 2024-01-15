@@ -136,7 +136,8 @@ npm run start
 ```
 + yarn
 
-``` yarn
+```
+yarn
 yarn run start
 ```
 
