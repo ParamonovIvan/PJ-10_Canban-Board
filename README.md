@@ -130,7 +130,8 @@
 
 + npm
 
-``` npm i
+```
+npm i
 npm run build
 npm run start
 ```
