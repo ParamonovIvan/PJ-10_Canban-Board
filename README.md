@@ -132,12 +132,13 @@
 
 ``` npm i
 npm run build
-npm run start ```
-
+npm run start
+```
 + yarn
 
 ``` yarn
-yarn run start ```
+yarn run start
+```
 
 ### Результат работы:
 #### Страница канбан-доски
